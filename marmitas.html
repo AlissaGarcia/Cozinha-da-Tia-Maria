@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozinha da Tia Maria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/fav-icon-2-web.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" 
+        crossorigin="anonymous">
+        <link rel="script" href="script.js">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/css/uikit.min.css" />
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.23.1/dist/js/uikit-icons.min.js"></script>
+</head>
+
+<header>
+
+    <section class="cabecalho">
+
+        <!-- com o uikit -->
+
+      <!-- Botão para abrir o menu em telas pequenas -->
+<button class="uk-button uk-hidden@m" type="button" uk-toggle="target: #offcanvas-nav">
+    <span uk-icon="icon: menu"></span> Menu
+</button>
+<img class="logo uk-hidden@m" src="assets/logo-principal-web.svg" alt="logo principal tia maria">
+
+<!-- Menu normal para telas grandes -->
+<nav class="uk-navbar-container uk-visible@m">
+    <div class="uk-container">
+        <div uk-navbar>
+
+            <div class="uk-navbar-center">
+                <div class="uk-navbar-center-left">
+                    <ul class="uk-navbar-nav">
+                        <li class=" uk-button-text"><a href="index.html">Página Inicial</a></li>
+                        <li class="uk-button-text uk-active">
+                            <a href="produtos.html">Escolha seu pedido</a>
+                        </li>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Categorias de pedidos</a></li>
+                                    <hr>
+                                    <li class="uk-button-text1"><a href="salgado.html">Salgado</a></li>
+                                    <li class="uk-button-text1"><a href="doce.html">Doce</a></li>
+                                    <li class="uk-button-text1"><a href="kits.html">Kits</a></li>
+                                    <li class="uk-button-text1"><a href="marmitas.html">Marmitas</a></li>
+                                </ul>
+                            </div>
+                        
+                    </ul>
+                </div>
+                <a class="uk-navbar-item uk-logo" href="index.html">
+                    <img class="logo" src="assets/logo-principal-web.svg" alt="logo principal tia maria">
+                </a>
+                <div class="uk-navbar-center-right">
+                    <ul class="uk-navbar-nav">
+                        <li class="uk-button-text"><a href="login.html">Receitas Exclusivas</a></li>
+                        <li class="uk-button-text"><a href="carrinho.html"> <span uk-icon="cart" class="cart">
+                            <span class="uk-badge" id="contador-carrinho">0</span>
+                        </span>  Carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar">
+        <button class="uk-offcanvas-close" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="index.html">Página Inicial</a></li>
+            <li class="uk-parent">
+                <a href="produtos.html">Escolha seu pedido</a>
+                <ul class="uk-nav-sub">
+                    <li><a href="salgado.html">Salgado</a></li>
+                    <li><a href="doce.html">Doce</a></li>
+                    <li><a href="kits.html">Kits</a></li>
+                    <li><a href="marmitas.html">Marmitas</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Receitas Exclusivas</a></li>
+            <li class="uk-button-text"><a href="carrinho.html"> <span uk-icon="cart" class="cart">
+                <span class="uk-badge" id="contador-carrinho">0</span>
+            </span>  Carrinho</a></li>
+        </ul>
+    </div>
+</div>
+        
+
+<hr class="juntar">
+    </section>
+
+
+</header>
+
+
+<body>
+<br>
+    <img src="assets/titulos-pag/20.png">
+    <br>
+
+<br>
+    <img src="assets/Banner-promocional1.png"
+<br>
+    <div id="produtos">
+
+
+    </div>
+<section class="produtos_geral">
+
+    
+    <section class="marmitas alinhamento">
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin ukdes" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="assets/cards/1.png" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                    <h2 class="uk-card-title tex-card">Marmita de Salada de Brócolis com Frango e Ovo</h2>
+                    <p class="tex-card">R$ 30,00</p>
+                    <button class="add-carrinho bnt-carrinho" data-id="1" data-nome="Marmita de salada de brócolis com frango e ovo" data-preco="30" data-imagem="assets/cards/1.png"  >Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        
+        </div><div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="assets/cards/2.png" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                     <h2 class="uk-card-title tex-card">Marmita de Frango, Cenoura e brócolis</h2>
+                    <p class="tex-card">R$ 27,00</p>
+                    <button class="add-carrinho bnt-carrinho" data-id="1" data-nome="Marmita de Frango, Cenoura e brócolis" data-preco="27" data-imagem="assets/cards/2.png"  >Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="assets/cards/3.png" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                     <h2 class="uk-card-title tex-card">Marmita de Cocha de Frango Tradicional</h2>
+                    <p class="tex-card">R$ 25,00</p>
+                    <button class="add-carrinho bnt-carrinho" data-id="1" data-nome="Marmita de Cocha de Frango Tradicional" data-preco="25" data-imagem="assets/cards/3.png"  >Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="assets/cards/4.png" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body">
+                     <h2 class="uk-card-title tex-card">Marmita Vegetariana de Brócolis, Cuzcuz e Morango</h2>
+                    <p class="tex-card">R$ 30,00</p>
+                    <button class="add-carrinho bnt-carrinho" data-id="1" data-nome="Marmita Vegetariana de Brócolis, Cuzcuz e Morango" data-preco="30" data-imagem="assets/cards/4.png"  >Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+
+</section>
+
+<head>
+    <script defer src="script.js"></script>
+</head>
+
+<section class="titulo-car-tex titulo-car">
+    <a href="carrinho.html" class="titulo-car-tex btn-inscrever">Ir para o Carrinho</a>
+
+</section>
+
+<br>
+
+
+<section class="rodape">
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Somos uma empresa dedicada a fornecer os melhores serviços para nossos clientes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <div class="social-icons">
+                    <a href="#"><a href="" uk-icon="instagram"></a></a>
+                    <a href="#"><a href="" uk-icon="whatsapp"></a></a>
+                    <a href="#"><a href="" uk-icon="facebook"></a></a>
+                    <a href="#"><a href="" uk-icon="tiktok"></a></a>
+
+                    <p>Entre em contato conosco sempre que precisar!</p>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</section>
+
+</body>
+</html>
